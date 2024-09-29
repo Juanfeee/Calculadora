@@ -36,8 +36,6 @@ class MainActivity : AppCompatActivity() {
             //Aqui sumamos
             binding.btnSuma.setOnClickListener {
                 calculadora.sumar()
-                binding.txtEcuacionUno.text=calculadora.mostrarEcuacionUno()
-                binding.txtEcuacionDos.text=calculadora.mostrarEcuacionDos()
                 signo="+"
                 binding.txtSigno.text= signo
                 binding.txtNumeros.text= (calculadora.mostrarEcuacionUno())
@@ -90,13 +88,11 @@ class MainActivity : AppCompatActivity() {
         }
         binding.btnNumero1.setOnClickListener {
             calculadora.digitarNumeroDos(1)
-            binding.txtEcuacionDos.text=calculadora.mostrarEcuacionDos()
             binding.txtEcuacion.text= (calculadora.mostrarEcuacionDos())
 
         }
         binding.btnNumero2.setOnClickListener {
             calculadora.digitarNumeroDos(2)
-            binding.txtEcuacionDos.text=calculadora.mostrarEcuacionDos()
             binding.txtEcuacion.text= calculadora.mostrarEcuacionDos()
 
         }
@@ -146,13 +142,11 @@ class MainActivity : AppCompatActivity() {
         }
         binding.btnNumero1.setOnClickListener {
             calculadora.digitarNumeroUno(1)
-            binding.txtEcuacionUno.text=calculadora.mostrarEcuacionUno()
             binding.txtEcuacion.text= calculadora.mostrarEcuacionUno()
 
         }
         binding.btnNumero2.setOnClickListener {
             calculadora.digitarNumeroUno(2)
-            binding.txtEcuacionUno.text=calculadora.mostrarEcuacionUno()
             binding.txtEcuacion.text= calculadora.mostrarEcuacionUno()
 
         }
